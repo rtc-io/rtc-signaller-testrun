@@ -12,5 +12,5 @@
 **/
 module.exports = function(createSignaller, opts) {
   // check the api signature first
-  // require('./modules/signaller/')(createSignaller, opts);
+  require('./modules/signaller/')(createSignaller, opts);
 };
