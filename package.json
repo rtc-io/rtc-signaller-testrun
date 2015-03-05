@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/rtc-io/rtc-signaller-testrun/issues"
   },
-  "homepage": "https://github.com/rtc-io/rtc-signaller-testrun"
+  "homepage": "https://github.com/rtc-io/rtc-signaller-testrun",
+  "dependencies": {
+    "rtc-quickconnect": "^4.2.0",
+    "rtc-tools": "^4.2.3",
+    "tape": "^3.5.0"
+  },
+  "devDependencies": {
+    "rtc-signaller": "^5.2.3"
+  }
 }
