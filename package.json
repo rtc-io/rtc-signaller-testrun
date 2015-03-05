@@ -30,6 +30,10 @@
   },
   "devDependencies": {
     "rtc-pluggable-signaller": "^1.1.0",
-    "rtc-signaller": "^5.2.3"
+    "rtc-signaller": "^5.2.3",
+    "testling": "^1.7.1"
+  },
+  "testling": {
+    "files": "test/all.js"
   }
 }
