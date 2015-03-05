@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/rtc-io/rtc-signaller-testrun",
   "dependencies": {
+    "cog": "^1.0.0",
     "rtc-quickconnect": "^4.2.0",
     "rtc-tools": "^4.2.3",
     "tape": "^3.5.0"
   },
   "devDependencies": {
+    "rtc-pluggable-signaller": "^1.1.0",
     "rtc-signaller": "^5.2.3"
   }
 }
