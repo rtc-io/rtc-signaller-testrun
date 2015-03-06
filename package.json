@@ -29,6 +29,7 @@
     "tape": "^3.5.0"
   },
   "devDependencies": {
+    "cuid": "^1.2.4",
     "rtc-pluggable-signaller": "^1.1.0",
     "rtc-signaller": "^5.2.3",
     "testling": "^1.7.1"
