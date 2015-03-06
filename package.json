@@ -25,6 +25,7 @@
   "dependencies": {
     "cog": "^1.0.0",
     "cuid": "^1.2.4",
+    "rtc-capture": "^1.0.2",
     "rtc-core": "^4.0.0",
     "rtc-quickconnect": "^4.2.0",
     "rtc-tools": "^4.2.3",
