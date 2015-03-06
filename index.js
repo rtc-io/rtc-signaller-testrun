@@ -8,7 +8,8 @@
 
   ## Example Usage
 
-  To be completed.
+  <<< examples/runtest.js
+
 **/
 module.exports = function(createSignaller, opts) {
   require('./modules/signaller/')(createSignaller, opts);

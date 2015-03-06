@@ -15,7 +15,18 @@ and the lower level [`rtc-tools`](https://github.com/rtc-io/rtc-tools).
 
 ## Example Usage
 
-To be completed.
+```js
+var testrun = require('rtc-signaller-testrun');
+var messenger = require('rtc-switchboard-messenger');
+var signaller = require('rtc-signaller');
+
+function createSignaller(opts) {
+  return signaller(messenger('https://switchboard.rtc.io'), opts);
+}
+
+testrun(createSignaller);
+
+```
 
 ## License(s)
 
