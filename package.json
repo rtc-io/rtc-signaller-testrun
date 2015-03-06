@@ -1,6 +1,6 @@
 {
   "name": "rtc-signaller-testrun",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A suite of tests that will test how well a custom signaller supports the requirements of rtc-quickconnect and rtc-tools",
   "main": "index.js",
   "scripts": {
