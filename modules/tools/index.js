@@ -7,7 +7,7 @@ module.exports = function(createSignaller, opts) {
 
   if (! detect.moz) {
     require('./coupling-reactive')(createSignaller, opts);
-//     require('./coupling-reactive-randomdelay')(createSignaller, opts);
+    require('./coupling-reactive-randomdelay')(createSignaller, opts);
 //     require('./coupling-reactive-randomdelaystreams')(createSignaller, opts);
 
 //     require('./capture-close')(createSignaller, opts);
