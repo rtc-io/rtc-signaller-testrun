@@ -1,4 +1,4 @@
-var quickconnect = require('../../');
+var quickconnect = require('rtc-quickconnect');
 var defaults = require('cog/defaults');
 var detect = require('rtc-tools/detect');
 
