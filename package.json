@@ -35,6 +35,7 @@
   "devDependencies": {
     "rtc-pluggable-signaller": "^1.1.0",
     "rtc-signaller": "^5.2.3",
+    "rtc-switchboard-messenger": "^1.0.0",
     "testling": "^1.7.1"
   },
   "testling": {
