@@ -13,6 +13,6 @@
 **/
 module.exports = function(createSignaller, opts) {
   require('./modules/signaller/')(createSignaller, opts);
-  require('./modules/tools/')(createSignaller, opts);
-  require('./modules/quickconnect/')(createSignaller, opts);
+  require('rtc-tools-test')(require('rtc-tools'), createSignaller, opts);
+  require('rtc-quickconnect-test')(require('rtc-quickconnect'), createSignaller, opts);
 };
