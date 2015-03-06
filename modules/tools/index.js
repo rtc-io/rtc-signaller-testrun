@@ -10,6 +10,6 @@ module.exports = function(createSignaller, opts) {
     require('./coupling-reactive-randomdelay')(createSignaller, opts);
     require('./coupling-reactive-randomdelaystreams')(createSignaller, opts);
 
-//     require('./capture-close')(createSignaller, opts);
+    require('./capture-close')(createSignaller, opts);
   }
 };
