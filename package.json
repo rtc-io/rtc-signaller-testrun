@@ -4,7 +4,7 @@
   "description": "A suite of tests that will test how well a custom signaller supports the requirements of rtc-quickconnect and rtc-tools",
   "main": "index.js",
   "scripts": {
-    "test": "testling -x ./.travis/start-$BROWSER.sh",
+    "test": "browserify test/all.js | broth ./.travis/start-$BROWSER.sh | tap-spec",
     "gendocs": "gendocs > README.md"
   },
   "repository": {
@@ -36,10 +36,12 @@
     "whisk": "^1.1.0"
   },
   "devDependencies": {
+    "broth": "^1.1.0",
+    "browserify": "^9.0.3",
     "rtc-pluggable-signaller": "^1.1.0",
     "rtc-signaller": "^5.2.3",
     "rtc-switchboard-messenger": "^1.0.0",
-    "testling": "^1.7.1"
+    "tap-spec": "^2.2.2"
   },
   "testling": {
     "files": "test/all.js"
