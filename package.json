@@ -30,7 +30,7 @@
     "rtc-quickconnect": "^4.2.0",
     "rtc-quickconnect-test": "^1.0.1",
     "rtc-tools": "^4.2.3",
-    "rtc-tools-test": "^1.0.0",
+    "rtc-tools-test": "^1.1.0",
     "tape": "^3.5.0",
     "uuid": "^2.0.1",
     "whisk": "^1.1.0"
