@@ -3,6 +3,7 @@ var cuid = require('cuid');
 
 module.exports = function(createSignaller, opts) {
   var signallers = [];
+  var remoteIds = [];
   var roomId = cuid();
 
   test('can create signaller:0', function(t) {
@@ -18,15 +19,15 @@ module.exports = function(createSignaller, opts) {
   });
 
   test('exchange announces', function(t) {
-    t.plan(5);
+    t.plan(3);
     signallers[1].on('peer:announce', function(data) {
-      t.ok(data);
-      t.equal(data.id, signallers[0].id);
+      remoteIds[0] = data && data.id;
+      t.ok(remoteIds[0], 'signaller:1 received announce from 0 and received a valid id');
     });
 
     signallers[0].on('peer:announce', function(data) {
-      t.ok(data);
-      t.equal(data.id, signallers[1].id);
+      remoteIds[1] = data && data.id;
+      t.ok(remoteIds[1], 'signaller:0 received announce from 1 and received a valid id');
     });
 
     signallers[0].announce({ room: roomId });
@@ -40,7 +41,7 @@ module.exports = function(createSignaller, opts) {
       t.equal(data, 'bar');
     });
 
-    signallers[0].to(signallers[1].id).send('/foo', 'bar');
+    signallers[0].to(remoteIds[1]).send('/foo', 'bar');
     t.pass('sent message');
   });
 
@@ -50,7 +51,7 @@ module.exports = function(createSignaller, opts) {
       t.equal(data, 'baz');
     });
 
-    signallers[1].to(signallers[0].id).send('/foo', 'baz');
+    signallers[1].to(remoteIds[0]).send('/foo', 'baz');
     t.pass('sent message');
   });
 
